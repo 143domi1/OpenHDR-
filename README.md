@@ -90,7 +90,7 @@ You are free to use, modify, and distribute it.
 
 
 
-Goals for Future Versions
+## Goals for Future Versions
 
 GUI for editing HDR scene metadata
 
