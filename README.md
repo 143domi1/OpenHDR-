@@ -1,4 +1,4 @@
-# OpenHDR-
+# OpenHDR++
 
 
 # OpenHDR++  
