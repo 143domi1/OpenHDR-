@@ -103,10 +103,16 @@ Goals for Future Versions
 [ ] Real-time tone mapping previews
 
 
+## Diffrence between **SDR** and **OpenHDR++**
+**SDR**
+![Screenshot From 2025-05-14 09-23-47](https://github.com/user-attachments/assets/6c447dd8-d250-4284-865f-33b8a974e4a4)
+
+**OpenHDR++**
+
+![Screenshot From 2025-05-14 09-23-08](https://github.com/user-attachments/assets/6780cd6a-65d4-44e0-b893-45954b7a93b8)
 
 
-Contributing
-
+## Contributing
 Pull requests are welcome!
 If you want to help with GPU acceleration, GUI design, or AI integration — open an issue or message the creator.
 
