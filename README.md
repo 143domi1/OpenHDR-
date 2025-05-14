@@ -33,31 +33,30 @@ openhdr/ ├── metadata/                # Stores auto-generated or manual sc
 ## Installation
 
 ### 1. Install requirements
-```bash
-pip install opencv-python numpy
+
+    pip install opencv-python numpy
 
 2. Link the MPV Lua script
 
 Edit or create ~/.config/mpv/scripts/ and copy the Lua script:
 
-mkdir -p ~/.config/mpv/scripts
-cp player/mpv_openscript.lua ~/.config/mpv/scripts/
+    mkdir -p ~/.config/mpv/scripts
+    cp player/mpv_openscript.lua ~/.config/mpv/scripts/
 
 
----
 
 Usage
 
 Step 1: Generate Metadata
 
-cd tools
-python openhdr_generate.py ../yourvideo.mp4
+    cd tools
+    python openhdr_generate.py ../yourvideo.mp4
 
 This creates a .hdrmeta.json file in the metadata/ folder.
 
 Step 2: Play the video with MPV
 
-mpv ../yourvideo.mp4
+    mpv ../yourvideo.mp4
 
 MPV will read the metadata and apply real-time enhancements.
 
@@ -65,20 +64,20 @@ MPV will read the metadata and apply real-time enhancements.
 
 Metadata Format (JSON)
 
-{
-  "version": "2.0",
-  "video": "yourvideo.mp4",
-  "metadata_type": "scene_auto",
-  "scenes": [
     {
-      "start": 0.0,
-      "end": 8.4,
-      "brightness": 1.1,
-      "contrast": 1.0,
-      "saturation": 1.1
+      "version": "2.0",
+      "video": "yourvideo.mp4",
+      "metadata_type": "scene_auto",
+      "scenes": [
+        {
+          "start": 0.0,
+          "end": 8.4,
+          "brightness": 1.1,
+          "contrast": 1.0,
+          "saturation": 1.1
+        }
+      ]
     }
-  ]
-}
 
 You can edit this manually or use the Python tool to regenerate.
 
