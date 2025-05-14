@@ -92,15 +92,15 @@ You are free to use, modify, and distribute it.
 
 Goals for Future Versions
 
-[ ] GUI for editing HDR scene metadata
+GUI for editing HDR scene metadata
 
-[ ] AI-powered scene detection using PySceneDetect or deep learning
+AI-powered scene detection using PySceneDetect or deep learning
 
-[ ] FFmpeg integration for encoded output
+FFmpeg integration for encoded output
 
-[ ] Support for HDR10+ sidecar metadata
+Support for HDR10+ sidecar metadata
 
-[ ] Real-time tone mapping previews
+Real-time tone mapping previews
 
 
 ## Diffrence between **SDR** and **OpenHDR++**
