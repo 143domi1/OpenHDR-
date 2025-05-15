@@ -43,7 +43,7 @@ def detect_scenes(video_path, threshold=15.0):
                 }
 
         last_brightness = brightness
-        frame_index += int(fps * 0.5)  # Sample every 0.5s
+        frame_index += 1
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_index)
 
     current_scene["end"] = round(cap.get(cv2.CAP_PROP_FRAME_COUNT) / fps, 2)
@@ -69,12 +69,13 @@ def save_metadata(video_path, scenes):
     print(f"[✓] Metadata saved to {out_path}")
 
 def main():
+    print("Please enter mpv with the selected video")
     parser = argparse.ArgumentParser()
     parser.add_argument("video", help="Input video path")
     args = parser.parse_args()
 
     scenes = detect_scenes(args.video)
     save_metadata(args.video, scenes)
-
+    
 if __name__ == "__main__":
     main()
